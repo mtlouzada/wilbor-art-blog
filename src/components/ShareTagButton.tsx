@@ -66,13 +66,13 @@ export default function ShareTagButton({
       onClick={handleShare}
       className={clsx(
         'inline-flex items-center gap-2 rounded-full font-mono transition-colors',
-        'bg-red-600 text-white hover:bg-red-700 focus:outline-none',
+        'bg-white text-black border border-gray-300 hover:bg-gray-100 focus:outline-none',
         compact
           ? 'px-3 min-h-[40px] text-xs sm:text-sm'
           : 'w-full justify-center px-4 py-3 rounded-lg text-base',
         className
       )}
-      style={{ outline: 'none', boxShadow: 'none', border: 'none' }}
+      style={{ outline: 'none', boxShadow: 'none' }}
       aria-label={`Compartilhar portfólio da tag ${tag}`}
       title={`Compartilhar portfólio da tag ${tag}`}
     >
